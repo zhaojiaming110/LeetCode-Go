@@ -18,9 +18,9 @@
 ##### 解题思路
 
 我们可以如下定义递归在`swapPairs`里的操作（忽略边界情况，如`head==nil || head.Next == nil`）
-$$
+$
 递推公式 = secondNode + firstNode + swapPairs(secondNode.Next)
-$$
+$
 
 ##### 代码
 
