@@ -22,7 +22,8 @@
 ##### 代码
 
 ```go
-list := &ListNode{}
+func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
+	list := &ListNode{}
 	cur := list
 	value := 0
 	for l1 != nil && l2 != nil {
@@ -43,6 +44,7 @@ list := &ListNode{}
 		cur.Next = l1
 	}
 	return list.Next
+}
 ```
 
 ##### 复杂度分析
