@@ -55,14 +55,7 @@ list := &ListNode{}
 ##### 解题思路
 
 我们可以如下递归地定义在两个链表里的`merge`操作（忽略边界情况，比如空链表等）；
-$$
-\left\{
-\begin{aligned}
-list1[0] + merge(list1[1:], list2);	list1[0]<list2[0] \\
-list2[0] + merge(list1, list2[1:]);	list2[0]<list1[0]
-\end{aligned}
-\right.
-$$
+![](https://tva1.sinaimg.cn/large/00831rSTly1gde8cklv13j30ma029mx2.jpg)
 
 也就是说两个链表的头部较小的一个与剩下元素的`merge`操作结果合并。
 
